@@ -22,7 +22,7 @@ You will implement a blogsystem with basic user role administration.
 
 ### Sprint 2
 - a user can be banned
-- if a user is banned, his published posts are hidden
+- if a user is banned, his published posts are hidden and his name is displayed as "Banned User"
 
 ### Sprint 3
 - a user can be a read only user or a redakteur
