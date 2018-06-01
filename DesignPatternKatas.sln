@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BehavioralPatterns", "BehavioralPatterns", "{E337D543-F1F8-4B16-B3D0-EB5A2FD11B3D}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BehaviouralPatterns", "BehaviouralPatterns", "{E337D543-F1F8-4B16-B3D0-EB5A2FD11B3D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CreationalPatterns", "CreationalPatterns", "{030D4F49-ED34-4940-B77D-5DDD558289DC}"
 EndProject

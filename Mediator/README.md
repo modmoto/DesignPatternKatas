@@ -1,4 +1,4 @@
-# State Pattern
+# Mediator Pattern
 The mediator pattern solves the problem when you have a lot of objects that have to exchange messages and therefore are tightly coupled together. Through the mediator pattern the objects do not need to know each other and therefore are more easily to exchange.
 
 ## Pick this Kata if code like this bothers you
