@@ -13,10 +13,10 @@ else OpenWebpage();
 ```
 
 ## The Kata
-You will implement a blogsystem with basic user role administration.
+You will implement a blogsystem with a basic user role system.
 
 ### Sprint 1
-- a blogpost has a title and a body
+- a post ist just a string
 - a user has a name and a list of posts that he published
 - a user can publish posts
 
