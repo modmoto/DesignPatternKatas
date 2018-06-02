@@ -13,10 +13,10 @@ else OpenWebpage();
 ```
 
 ## The Kata
-You will implement a blogsystem with basic user role administration.
+You will implement a blogsystem with a basic user role system.
 
 ### Sprint 1
-- a blogpost has a title and a body
+- a post ist just a string
 - a user has a name and a list of posts that he published
 - a user can publish posts
 
@@ -28,7 +28,7 @@ You will implement a blogsystem with basic user role administration.
 - a user can be a read only user or a redakteur
 - a read only user can not publish posts
 - a redakteur can publish posts
-- redakteur can be made a readonly user
+- redakteurs can be made a readonly user
 - a readonly user can be made a redakteur
 
 ### Sprint 4
@@ -42,21 +42,18 @@ You will implement a blogsystem with basic user role administration.
 
 ### Sprint 6
 - there will be a administrator role
-- the administrator can disable, enable or ban a user/redakteur
-- the administrator can promote or demote a user/redakteur
-- if an user/redakteur trys to disable/ban a user/redakteur, there will be an error
+- a administrator can not be banned or disabled, if it is tried, there will be an error
 
 ### Sprint 7
 - there is a temporary Redakteur role
 - a temporary redakteur role means a user can publish 3 posts like a redakteur
-- only an administrator can grant temporary redakteur roles
 
 ### Sprint 8
-- an administrator can delete a user/redakteur
+- users/redakteurs can be deleted, administrator can not and an error will be shown if somone trys it
 - there will be no more access to a deleted user/redakteur
 
 ### Sprint 9
-- an administrator can undelete a user
+- a users/redakteurs can be undeleted
 - an undeleted user works as if he was never deleted
 
 ### Sprint 10
