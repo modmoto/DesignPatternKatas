@@ -30,6 +30,7 @@ You will implement a printsystem for contracts. Printing will be simplified by a
 
 ### Sprint 4
 - There will be a google drive printer that stores the prints in the cloud. To store it correctly, the google printer has to print a newline after every 40 characters
+- the pdf printer also has to print the newline, but only after 80 character
 
 ### Sprint 5
 - The google printer will also support the feature of backward printing where the pages will start with the last, going to the first
