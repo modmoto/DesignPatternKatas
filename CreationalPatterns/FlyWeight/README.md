@@ -14,7 +14,7 @@ for(int i = 0; i < 100000; i++) {
 You will implement a system that generates characters.
 
 ### Sprint 1
-- implement a class that generates 100 000 000 Objects that represent a Character of the alphabet repeadetly
+- implement a class that generates 100 000 000 Objects that represent a Character of the alphabet repeatedly, like "A, B, ... Z, A..."
 
 ### Sprint 2
 - make the class create the same ammount of objects with a random font size of 10-20
