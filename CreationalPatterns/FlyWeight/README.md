@@ -19,6 +19,8 @@ You will implement a system that generates characters.
 ### Sprint 2
 - make the class create the same ammount of objects with a random font size of 10-20
 
+### Sprint 3
+- put a while loop that escapes after 100ms in the constructor of the character objects to simulate heavy initialisation costs
 
 ## The Problem
 
