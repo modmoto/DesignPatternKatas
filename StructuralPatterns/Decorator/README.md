@@ -11,6 +11,14 @@ public string UpdateUser(User user) {
     Logger.Info("leave method UpdateUser");
 }
 ```
+```
+var response = await httpClient.PostAsync("uri", new FormUrlEncodedContent(parameters));
+if (response.Code == 404) 
+    throw NotFoundException;
+if (response.Code == 403) 
+    throw UnauthorizedException;
+return await response.Content.ReadAsStringAsync();
+```
 
 ## The Kata
 You will implement a loggingsystem for a random program
