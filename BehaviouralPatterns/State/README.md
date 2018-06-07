@@ -3,13 +3,13 @@ The state pattern aims to put the state of an object inside the object so you ne
 
 ## Pick this Kata if code like this bothers you
 ```
-if (user.IsDisabled | user.IsBanned) throw new UserIsDisabledOrBannedException();
-else user.Name = newName;
+if (!(user.IsDisabled | user.IsBanned)) ;
+    user.Name = newName;
 
 ...
 
-if (user.IsBanned) throw new AccesNotGrantedException();
-else OpenWebpage();
+if (user.IsBanned) return new List<string>();
+else return user.Names;
 ```
 
 ## The Kata
