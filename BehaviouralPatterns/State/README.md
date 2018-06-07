@@ -60,7 +60,13 @@ You will implement a blogsystem with a basic user role system.
 - the read only user role is no longer needed, all users are treated like redakteurs
 
 ## The Problem
+if/else is logic from outside the domain objects
+Single Responsibility
+Open Close
 
-## The Explanation
+## The Pattern Explanation
+
+### Reasons not to use it
+many new state changes, meaning new functions, meaning touching all states
 
 ## The Solution
