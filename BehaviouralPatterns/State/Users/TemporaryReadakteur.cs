@@ -6,16 +6,16 @@ namespace State.Users
 {
     public class TemporaryReadakteur : IUser
     {
-        private readonly IUserData _userData;
+        private readonly UserData _userData;
         private int _freePosts;
 
-        public TemporaryReadakteur(IUserData data)
+        public TemporaryReadakteur(UserData data)
         {
             _userData = data;
             _freePosts = 3;
         }
 
-        private TemporaryReadakteur(IUserData data, int freePosts)
+        private TemporaryReadakteur(UserData data, int freePosts)
         {
             _userData = data;
             _freePosts = freePosts;

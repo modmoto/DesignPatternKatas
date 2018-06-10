@@ -5,9 +5,9 @@ namespace State.Users
 {
     public class BannedUser : IUser
     {
-        private readonly IUserData _userData;
+        private readonly UserData _userData;
 
-        public BannedUser(IUserData userData)
+        public BannedUser(UserData userData)
         {
             _userData = userData;
         }

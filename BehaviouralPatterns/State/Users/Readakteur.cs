@@ -6,9 +6,9 @@ namespace State.Users
 {
     public class Readakteur : IUser
     {
-        private readonly IUserData _userData;
+        private readonly UserData _userData;
 
-        public Readakteur(IUserData data)
+        public Readakteur(UserData data)
         {
             _userData = data;
         }

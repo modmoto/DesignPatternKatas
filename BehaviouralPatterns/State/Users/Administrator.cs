@@ -6,9 +6,9 @@ namespace State.Users
 {
     public class Administrator : IUser
     {
-        private readonly IUserData _userData;
+        private readonly UserData _userData;
 
-        public Administrator(IUserData userData)
+        public Administrator(UserData userData)
         {
             _userData = userData;
         }

@@ -4,7 +4,7 @@ using State.Contracts;
 
 namespace State.Users
 {
-    public class UserData : IUserData
+    public class UserData
     {
         private UserData(string name, IEnumerable<string> posts, int pinnedPost)
         {
@@ -18,19 +18,19 @@ namespace State.Users
             return new UserData(name, new List<string>(), 0);
         }
 
-        public IUserData SetName(string newName)
+        public UserData SetName(string newName)
         {
             return new UserData(newName, Posts, PinnedPost);
         }
 
-        public IUserData AddPost(string newPost)
+        public UserData AddPost(string newPost)
         {
             var list = Posts.ToList();
             list.Add(newPost);
             return new UserData(Name, list, PinnedPost);
         }
 
-        public IUserData PinPost(int id)
+        public UserData PinPost(int id)
         {
             return new UserData(Name, Posts, id);
         }
