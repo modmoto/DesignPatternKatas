@@ -3,14 +3,18 @@ The state pattern aims to put the state of an object inside the object so you ne
 
 ## Pick this Kata if code like this bothers you
 ```
-if (!(user.IsDisabled | user.IsBanned)) ;
+if (!(user.State == UserStates.Banned | user.State == UserStates.Disabled)) ;
     user.Name = newName;
 
 ...
 
-if (user.IsBanned) return new List<string>();
+if (user.IsAdmin) return new List<string>();
 else return user.Names;
 ```
+
+### Red Flags are
+ - a class has a enum state variable
+ - a class has boolean flags that are called in ifs from outside
 
 ## The Kata
 You will implement a blogsystem with a basic user role system.
