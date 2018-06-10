@@ -9,7 +9,13 @@ namespace State.Users
         private readonly IUserData _userData;
         private int _freePosts;
 
-        public TemporaryReadakteur(IUserData data, int freePosts)
+        public TemporaryReadakteur(IUserData data)
+        {
+            _userData = data;
+            _freePosts = 3;
+        }
+
+        private TemporaryReadakteur(IUserData data, int freePosts)
         {
             _userData = data;
             _freePosts = freePosts;
