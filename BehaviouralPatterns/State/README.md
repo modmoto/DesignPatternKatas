@@ -8,8 +8,8 @@ if (!(user.State == UserStates.Banned | user.State == UserStates.Disabled)) ;
 
 ...
 
-if (user.IsAdmin) return new List<string>();
-else return user.Names;
+if (user.IsBanned) return new List<string>();
+else return user.Posts;
 ```
 
 ### Red Flags are
