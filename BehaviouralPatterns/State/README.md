@@ -36,18 +36,14 @@ You will implement a blogsystem with a basic user role system.
 - if a user pins a post, an error occurs
 
 ### Sprint 5
-- users and redakteurs can be disabled, if they are disabled, they can no longer publish posts or pin posts
-- users and redakteurs can be enabled, if they are enabled again, they can do what they were able to do before
+- there will be a administrator role
+- a administrator can not be banned, if it is tried, there will be an error
 
 ### Sprint 6
-- there will be a administrator role
-- a administrator can not be banned or disabled, if it is tried, there will be an error
-
-### Sprint 7
 - there is a temporary Redakteur role
 - a temporary redakteur role means a user can publish 3 posts like a redakteur
 
-### Sprint 8
+### Sprint 7
 - the read only user role is no longer needed, all users are treated like redakteurs
 
 ## The Problem
