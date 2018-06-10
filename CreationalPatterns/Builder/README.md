@@ -11,8 +11,8 @@ You will implement a car assembly line. The car class is allready defined in the
 
 ### Sprint 1
 - Initialize a car with some values and call it VwPolo
-- Initialize aother car with appropriate values for a Ferrari
-- Initialize aother car with appropriate values for a Mercedes Truck
+- Initialize another car with appropriate values for a Ferrari
+- Initialize another car with appropriate values for a Mercedes Truck
 
 ### Sprint 2
 - Write Tests for each car that check if the values are set correct

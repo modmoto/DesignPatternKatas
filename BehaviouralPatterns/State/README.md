@@ -3,13 +3,13 @@ The state pattern aims to put the state of an object inside the object so you ne
 
 ## Pick this Kata if code like this bothers you
 ```
-if (user.IsDisabled | user.IsBanned) throw new UserIsDisabledOrBannedException();
-else user.Name = newName;
+if (!(user.IsDisabled | user.IsBanned)) ;
+    user.Name = newName;
 
 ...
 
-if (user.IsBanned) throw new AccesNotGrantedException();
-else OpenWebpage();
+if (user.IsBanned) return new List<string>();
+else return user.Names;
 ```
 
 ## The Kata
@@ -60,7 +60,13 @@ You will implement a blogsystem with a basic user role system.
 - the read only user role is no longer needed, all users are treated like redakteurs
 
 ## The Problem
+if/else is logic from outside the domain objects
+Single Responsibility
+Open Close
 
-## The Explanation
+## The Pattern Explanation
+
+### Reasons not to use it
+many new state changes, meaning new functions, meaning touching all states
 
 ## The Solution
