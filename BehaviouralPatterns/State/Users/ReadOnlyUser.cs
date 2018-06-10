@@ -39,7 +39,7 @@ namespace State.Users
         }
 
         public IEnumerable<string> Posts => _userData.Posts;
-        public string PinnedPost => _userData.Posts.ToList()[_userData.PinnedPost];
+        public int PinnedPost  => _userData.PinnedPost;
         public string Name => _userData.Name;
     }
 }

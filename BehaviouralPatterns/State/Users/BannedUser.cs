@@ -38,7 +38,7 @@ namespace State.Users
         }
 
         public IEnumerable<string> Posts => new List<string>();
-        public string PinnedPost  => "Post is Banned";
+        public int PinnedPost  => 0;
         public string Name => "BannedUser";
     }
 }

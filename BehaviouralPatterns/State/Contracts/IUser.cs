@@ -12,7 +12,7 @@ namespace State.Contracts
         IUser PinPost(int id);
 
         IEnumerable<string> Posts { get; }
-        string PinnedPost { get; }
+        int PinnedPost { get; }
         string Name { get; }
     }
 
