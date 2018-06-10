@@ -1,36 +1,37 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using State.Contracts;
 
 namespace State.Users
 {
-    public class ReadOnlyUser : IUser
+    public class Administrator : IUser
     {
         private readonly IUserData _userData;
 
-        public ReadOnlyUser(IUserData data)
+        public Administrator(IUserData userData)
         {
-            _userData = data;
+            _userData = userData;
         }
 
         public IUser Publish(string postToPublish)
         {
-            throw new UserCanNotPublishPostsException();
+            return new Administrator(_userData.AddPost(postToPublish));
         }
 
         public IUser Ban()
         {
-            return new BannedUser(_userData);
+            throw new AdministratorCanNotBeBannedException();
         }
 
         public IUser Degrade()
         {
-            return this;
+            throw new AdministratorCanNotBeDisabledException();
         }
 
         public IUser Upgrade()
         {
-            return new Readakteur(_userData);
+            return new Administrator(_userData);
         }
 
         public IUser PinPost(int id)
