@@ -32,7 +32,6 @@ You will implement a blogsystem with a basic user role system.
 - a readonly user can be made a redakteur
 
 ### Sprint 4
-- posts are sorted by date
 - a redakteur can pin a post. This pinned post is always the first post in the list of posts he published
 - if a user pins a post, an error occurs
 
@@ -49,14 +48,6 @@ You will implement a blogsystem with a basic user role system.
 - a temporary redakteur role means a user can publish 3 posts like a redakteur
 
 ### Sprint 8
-- users/redakteurs can be deleted, administrator can not and an error will be shown if somone trys it
-- there will be no more access to a deleted user/redakteur
-
-### Sprint 9
-- a users/redakteurs can be undeleted
-- an undeleted user works as if he was never deleted
-
-### Sprint 10
 - the read only user role is no longer needed, all users are treated like redakteurs
 
 ## The Problem
