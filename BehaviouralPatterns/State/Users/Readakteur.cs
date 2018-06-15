@@ -23,7 +23,7 @@ namespace State.Users
             return new BannedUser(_userData);
         }
 
-        public IUser Degrade()
+        public IUser Downgrade()
         {
             return new ReadOnlyUser(_userData);
         }

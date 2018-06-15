@@ -23,7 +23,7 @@ namespace State.Users
             throw new AdministratorCanNotBeBannedException();
         }
 
-        public IUser Degrade()
+        public IUser Downgrade()
         {
             throw new AdministratorCanNotBeDisabledException();
         }

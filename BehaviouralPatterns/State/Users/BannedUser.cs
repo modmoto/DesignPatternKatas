@@ -22,7 +22,7 @@ namespace State.Users
             return this;
         }
 
-        public IUser Degrade()
+        public IUser Downgrade()
         {
             return new ReadOnlyUser(_userData);
         }

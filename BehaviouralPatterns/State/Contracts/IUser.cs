@@ -7,7 +7,7 @@ namespace State.Contracts
     {
         IUser Publish(string postToPublish);
         IUser Ban();
-        IUser Degrade();
+        IUser Downgrade();
         IUser Upgrade();
         IUser PinPost(int id);
 
