@@ -26,16 +26,19 @@ In your webshop are three kinds of things you can buy:
  - Games (has Title, PublisherName, AmmountOfMinimumPlayers, AmmountOfMaximumPlayers, PrizePerItem)
 
 ### Sprint 2
-The three classes will have a html representation to show it in the browser (just return some html string that kind of fits a html structure)
+Implement a checkout cart that can traverse through the elements and summ up the prizes.
 
 ### Sprint 3
-The three classes will have a pdf representation to print invoices. Just return a combination of the strings as byte array
+The three classes will have a html representation to show it in the browser (just return some html string that kind of fits a html structure)
 
 ### Sprint 4
-Implement a way to realize a 20% prize off for all classes
+The three classes will have a pdf representation to print invoices. Just return a combination of the strings as byte array
 
 ### Sprint 5
-Implement a way to realize a buy two get one for free for all classes, except the movie class.
+Implement a way to calculate the total price of items with a 20% prize off for all classes, except the Book class. 
+
+### Sprint 6
+Implement a way to calculate the total price of items in a "buy two get one for free" scenario. Do this for all classes, except the movie class.
 
 ## The Problem
 
