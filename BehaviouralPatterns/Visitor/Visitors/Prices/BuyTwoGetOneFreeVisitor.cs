@@ -1,12 +1,10 @@
-﻿
-using Visitor.Books;
-using Visitor.Contracts;
+﻿using Visitor.Books;
 using Visitor.Games;
 using Visitor.Movies;
 
-namespace Visitor.Visitors
+namespace Visitor.Visitors.Prices
 {
-    public class BuyTwoGetOneFreeVisitor : IShopItemVisitor
+    public class BuyTwoGetOneFreeVisitor : IPriceVisitor
     {
         public double Sum { get; private set; }
         public int AmmountBooks { get; private set; }

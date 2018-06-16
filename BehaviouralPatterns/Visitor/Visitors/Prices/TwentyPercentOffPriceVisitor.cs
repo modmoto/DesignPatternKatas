@@ -1,11 +1,10 @@
 ﻿using Visitor.Books;
-using Visitor.Contracts;
 using Visitor.Games;
 using Visitor.Movies;
 
-namespace Visitor.Visitors
+namespace Visitor.Visitors.Prices
 {
-    public class PriceVisitor : IShopItemVisitor
+    public class TwentyPercentOffPriceVisitor : IPriceVisitor
     {
         public double Sum { get; private set; }
 
@@ -16,12 +15,12 @@ namespace Visitor.Visitors
 
         public void Visit(Movie movie)
         {
-            Sum += movie.PrizePerItem;
+            Sum += movie.PrizePerItem * 0.2;
         }
 
         public void Visit(Game game)
         {
-            Sum += game.PrizePerItem;
+            Sum += game.PrizePerItem * 0.2;;
         }
     }
 }
