@@ -1,26 +1,29 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BehaviouralPatterns", "BehaviouralPatterns", "{E337D543-F1F8-4B16-B3D0-EB5A2FD11B3D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CreationalPatterns", "CreationalPatterns", "{030D4F49-ED34-4940-B77D-5DDD558289DC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StructuralPatterns", "StructuralPatterns", "{3825BE15-1F39-4E1F-BBA4-7F95C613428F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mediator", "BehaviouralPatterns\Mediator\Mediator.csproj", "{5B31B0CC-0D98-4E91-BDB7-3D49BE81F293}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mediator", "BehaviouralPatterns\Mediator\Mediator.csproj", "{5B31B0CC-0D98-4E91-BDB7-3D49BE81F293}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "State", "BehaviouralPatterns\State\State.csproj", "{133F29FD-032F-43DC-9EFF-1CD19717B7FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "State", "BehaviouralPatterns\State\State.csproj", "{133F29FD-032F-43DC-9EFF-1CD19717B7FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strategy", "BehaviouralPatterns\Strategy\Strategy.csproj", "{C63C97FC-1C51-425F-B791-8D42530F7FC6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Strategy", "BehaviouralPatterns\Strategy\Strategy.csproj", "{C63C97FC-1C51-425F-B791-8D42530F7FC6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Builder", "CreationalPatterns\Builder\Builder.csproj", "{EA4A8D67-DCF3-4215-A8D5-C6C5BA47FAB3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Builder", "CreationalPatterns\Builder\Builder.csproj", "{EA4A8D67-DCF3-4215-A8D5-C6C5BA47FAB3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factory", "CreationalPatterns\Factory\Factory.csproj", "{A5A85BEA-A689-4D65-AA01-9788248272C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Factory", "CreationalPatterns\Factory\Factory.csproj", "{A5A85BEA-A689-4D65-AA01-9788248272C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlyWeight", "CreationalPatterns\FlyWeight\FlyWeight.csproj", "{6D74EC08-ABE6-4D13-8A47-4B3F0321F308}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlyWeight", "CreationalPatterns\FlyWeight\FlyWeight.csproj", "{6D74EC08-ABE6-4D13-8A47-4B3F0321F308}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adapter", "StructuralPatterns\Adapter\Adapter.csproj", "{BB84A9B9-9387-40ED-B6A0-A8A57BB88C1A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Adapter", "StructuralPatterns\Adapter\Adapter.csproj", "{BB84A9B9-9387-40ED-B6A0-A8A57BB88C1A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decorator", "StructuralPatterns\Decorator\Decorator.csproj", "{3A60A5B5-BA82-43BB-8B5F-6E6E075BEA29}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Decorator", "StructuralPatterns\Decorator\Decorator.csproj", "{3A60A5B5-BA82-43BB-8B5F-6E6E075BEA29}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visitor", "BehaviouralPatterns\Visitor\Visitor.csproj", "{E6DEEB1D-D533-4C24-9014-A79E28E50F8D}"
 EndProject
@@ -67,6 +70,9 @@ Global
 		{E6DEEB1D-D533-4C24-9014-A79E28E50F8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E6DEEB1D-D533-4C24-9014-A79E28E50F8D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{5B31B0CC-0D98-4E91-BDB7-3D49BE81F293} = {E337D543-F1F8-4B16-B3D0-EB5A2FD11B3D}
 		{133F29FD-032F-43DC-9EFF-1CD19717B7FC} = {E337D543-F1F8-4B16-B3D0-EB5A2FD11B3D}
@@ -77,5 +83,8 @@ Global
 		{BB84A9B9-9387-40ED-B6A0-A8A57BB88C1A} = {3825BE15-1F39-4E1F-BBA4-7F95C613428F}
 		{3A60A5B5-BA82-43BB-8B5F-6E6E075BEA29} = {3825BE15-1F39-4E1F-BBA4-7F95C613428F}
 		{E6DEEB1D-D533-4C24-9014-A79E28E50F8D} = {E337D543-F1F8-4B16-B3D0-EB5A2FD11B3D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4B99C75E-43A4-4DCD-A8BE-9C20FB75736E}
 	EndGlobalSection
 EndGlobal
