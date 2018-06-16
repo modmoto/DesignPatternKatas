@@ -25,7 +25,7 @@ namespace State.Users
 
         public IUser Downgrade()
         {
-            return this;
+            return new ReadOnlyUser(_userData);
         }
 
         public IUser Upgrade()
@@ -35,7 +35,7 @@ namespace State.Users
 
         public IUser PinPost(int id)
         {
-            return new Administrator(_userData.PinPost(id));
+            throw new UserCanNotPinPostsException();
         }
 
         public IEnumerable<string> Posts => _userData.Posts;
