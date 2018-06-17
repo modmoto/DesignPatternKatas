@@ -3,13 +3,13 @@ using System.Collections.Generic;
 
 namespace State.Contracts
 {
-    public interface IUser
+    public interface IUserState
     {
-        IUser Publish(string postToPublish);
-        IUser Ban();
-        IUser Downgrade();
-        IUser Upgrade();
-        IUser PinPost(int id);
+        IUserState Publish(string postToPublish);
+        IUserState Ban();
+        IUserState Downgrade();
+        IUserState Upgrade();
+        IUserState PinPost(int id);
 
         IEnumerable<string> Posts { get; }
         int PinnedPost { get; }

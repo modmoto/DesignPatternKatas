@@ -3,36 +3,36 @@ using State.Contracts;
 
 namespace State.Users
 {
-    public class BannedUser : IUser
+    public class BannedUserState : IUserState
     {
         private readonly UserData _userData;
 
-        public BannedUser(UserData userData)
+        public BannedUserState(UserData userData)
         {
             _userData = userData;
         }
 
-        public IUser Publish(string postToPublish)
+        public IUserState Publish(string postToPublish)
         {
             throw new UserCanNotPublishException();
         }
 
-        public IUser Ban()
+        public IUserState Ban()
         {
-            return new BannedUser(_userData);
+            return new BannedUserState(_userData);
         }
 
-        public IUser Downgrade()
+        public IUserState Downgrade()
         {
-            return new ReadOnlyUser(_userData);
+            return new ReadOnlyUserState(_userData);
         }
 
-        public IUser Upgrade()
+        public IUserState Upgrade()
         {
-            return new Administrator(_userData);
+            return new AdministratorState(_userData);
         }
 
-        public IUser PinPost(int id)
+        public IUserState PinPost(int id)
         {
             throw new UserCanNotPinPostsException();
         }

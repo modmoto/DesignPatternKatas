@@ -5,39 +5,39 @@ namespace State.Users
 {
     public class UserContext
     {
-        public IUser UserState { get; private set; }
-        public IEnumerable<string> Posts => UserState.Posts;
-        public int PinnedPost => UserState.PinnedPost;
-        public string Name => UserState.Name;
+        public IUserState UserStateState { get; private set; }
+        public IEnumerable<string> Posts => UserStateState.Posts;
+        public int PinnedPost => UserStateState.PinnedPost;
+        public string Name => UserStateState.Name;
 
-        public UserContext(IUser userState)
+        public UserContext(IUserState userStateState)
         {
-            UserState = userState;
+            UserStateState = userStateState;
         }
 
         public void Publish(string postToPublish)
         {
-            UserState = UserState.Publish(postToPublish);
+            UserStateState = UserStateState.Publish(postToPublish);
         }
 
         public void Downgrade()
         {
-            UserState = UserState.Downgrade();
+            UserStateState = UserStateState.Downgrade();
         }
 
         public void Upgrade()
         {
-            UserState = UserState.Upgrade();
+            UserStateState = UserStateState.Upgrade();
         }
 
         public void PinPost(int id)
         {
-            UserState = UserState.PinPost(id);
+            UserStateState = UserStateState.PinPost(id);
         }
 
         public void Ban()
         {
-            UserState = UserState.Ban();
+            UserStateState = UserStateState.Ban();
         }
 
     }
