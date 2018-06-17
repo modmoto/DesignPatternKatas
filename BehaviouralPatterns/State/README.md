@@ -50,12 +50,17 @@ You will implement a blogsystem with a basic user role system.
 ### Sprint 7
 - the read only user role is no longer needed, all users are treated like redakteurs
 
+### Sprint 8
+- paint a picture that represents how the state of the application is changing when a operation is done.
+
 ## The Problem
-if/else is logic from outside the domain objects
-Single Responsibility
-Open Close
+The big problem here should be obviously, that the application is very dependant on if or switch cases that decide wheter a action is allowed or not. Also you have to store this decisions as some ifs will depend on the previous action. The reason why this is a problem is, that an if outside of an object usually means, that you are implementing domain logic outside of the domain object. That will lead to a lot of if/else or switch cases that have to be placed all around the domain object, to check if a action is available or not. For example if you have a `User` that has an `Age` Property and the rule of the domain is, that a user can not log in if he is not 18 yet, then this rule should belong to the `User` and it should not be the responsibility of the caller to determine if the user is 18. In the state pattern you could implement a `UnderagedUser` and a `FullAgedUser` to represent this state. This way you put the if into the classes or domain object itself and no clien ever has to deal with the age domain rule. Chances are that somebody will forget it or implement it wrong, eventually.
+
+You also violate the Open Closed Principle by putting a lot of if/else/switch logic in your application. If there is a new state, you will eventually have to check all the if/else branches to see, if the conditions still make sense. Also if a condition changes you have to toich code that also does something else (Single Responsibility violated) and you might break something.
 
 ## The Pattern Explanation
+
+![alt text](https://upload.wikimedia.org/wikipedia/de/7/70/StatePattern_Classdiagramm.png)
 
 ### Reasons not to use it
 many new state changes, meaning new functions, meaning touching all states
