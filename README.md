@@ -6,15 +6,3 @@ This is a collection of Coding Katas that should help learning when and how to u
  
  ## Picking a Kata
  Each Kata has a short explanation on the start what problem this Design Pattern is trying to solve. You should read this first to see if the Design Pattern might help to solve the problem you are facing right now.
- 
- ```mermaid
-sequenceDiagram
-Alice ->> Bob: Hello Bob, how are you?
-Bob-->>John: How about you John?
-Bob--x Alice: I am good thanks!
-Bob-x John: I am good thanks!
-Note right of John: Bob thinks a long<br/>long time, so long<br/>that the text does<br/>not fit on a row.
-
-Bob-->Alice: Checking with John...
-Alice->John: Yes... John, how are you?
-```
