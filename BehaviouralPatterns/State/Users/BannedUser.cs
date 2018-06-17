@@ -19,7 +19,7 @@ namespace State.Users
 
         public IUser Ban()
         {
-            return this;
+            return new BannedUser(_userData);
         }
 
         public IUser Downgrade()

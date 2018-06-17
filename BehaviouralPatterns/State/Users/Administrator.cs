@@ -25,7 +25,7 @@ namespace State.Users
 
         public IUser Downgrade()
         {
-            throw new AdministratorCanNotBeDisabledException();
+            return new Readakteur(_userData);
         }
 
         public IUser Upgrade()
