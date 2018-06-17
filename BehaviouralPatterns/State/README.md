@@ -60,6 +60,8 @@ You also violate the Open Closed Principle by putting a lot of if/else/switch lo
 
 ## The Pattern Explanation
 
+![alt text](https://upload.wikimedia.org/wikipedia/de/7/70/StatePattern_Classdiagramm.png)
+
 ### Reasons not to use it
 many new state changes, meaning new functions, meaning touching all states
 
