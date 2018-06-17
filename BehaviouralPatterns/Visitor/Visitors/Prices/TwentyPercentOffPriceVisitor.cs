@@ -15,12 +15,12 @@ namespace Visitor.Visitors.Prices
 
         public void Visit(Movie movie)
         {
-            Sum += movie.PrizePerItem * 0.2;
+            Sum += movie.PrizePerItem * 0.8;
         }
 
         public void Visit(Game game)
         {
-            Sum += game.PrizePerItem * 0.2;;
+            Sum += game.PrizePerItem * 0.8;
         }
     }
 }

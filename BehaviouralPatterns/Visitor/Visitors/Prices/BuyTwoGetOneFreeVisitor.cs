@@ -8,7 +8,7 @@ namespace Visitor.Visitors.Prices
     {
         public double Sum { get; private set; }
         public int AmmountBooks { get; private set; }
-        public int AmmountMovies { get; private set; }
+        public int AmmountGames { get; private set; }
 
         public void Visit(Book book)
         {
@@ -18,13 +18,13 @@ namespace Visitor.Visitors.Prices
 
         public void Visit(Movie movie)
         {
-            AmmountMovies++;
-            if (AmmountMovies != 3) Sum += movie.PrizePerItem;
+            Sum += movie.PrizePerItem;
         }
 
         public void Visit(Game game)
         {
-            Sum += game.PrizePerItem;
+            AmmountGames++;
+            if (AmmountGames != 3) Sum += game.PrizePerItem;
         }
     }
 }
